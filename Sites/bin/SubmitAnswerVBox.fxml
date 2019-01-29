@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="answerPart" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" spacing="4.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator prefWidth="200.0">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Separator>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Answer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" wrapText="true" />
+      <Button mnemonicParsing="false" text="Post" />
+      <Separator layoutX="18.0" layoutY="18.0" prefWidth="200.0">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </Separator>
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="32.0" right="8.0" top="8.0" />
+   </padding>
+</VBox>

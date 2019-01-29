@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="600.0" spacing="8.0">
+               <children>
+                  <Label text="Login">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="16.0" />
+                     </padding>
+                  </Label>
+                  <JFXTextField promptText="User Name" />
+                  <JFXPasswordField promptText="Password" />
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+                  <HBox prefHeight="36.0" prefWidth="200.0">
+                     <children>
+                        <Region prefHeight="36.0" prefWidth="459.0" HBox.hgrow="ALWAYS" />
+                        <JFXButton text="Login" />
+                        <JFXButton layoutX="535.0" layoutY="10.0" text="Cancel" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

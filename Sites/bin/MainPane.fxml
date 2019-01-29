@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane fx:id="MainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sprint2.Controller">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="saveData" mnemonicParsing="false" text="Save Data" />
+                    <MenuItem fx:id="loadData" mnemonicParsing="false" text="Load Data" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Development">
+                  <items>
+                    <MenuItem fx:id="rick" mnemonicParsing="false" text="Login Rick" />
+                    <MenuItem fx:id="tyler" mnemonicParsing="false" text="Login Tyler" />
+                    <MenuItem fx:id="mallory" mnemonicParsing="false" text="Login Mallory" />
+                    <MenuItem fx:id="michael" mnemonicParsing="false" text="Login Michael" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox alignment="CENTER_LEFT" spacing="6.0">
+               <children>
+                  <JFXHamburger fx:id="menu" />
+                  <Region layoutX="170.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                  <Label text="Stacky">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="searchText" prefWidth="300.0" />
+                  <JFXButton fx:id="searchButton" text="Search" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="v3.0.1">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <HBox fx:id="drawer" spacing="3.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="2.0">
+               <children>
+                  <JFXButton fx:id="home" maxWidth="1.7976931348623157E308" text="Home" />
+                  <JFXButton fx:id="groups" layoutX="10.0" layoutY="52.0" maxWidth="1.7976931348623157E308" text="Groups" />
+                  <Separator fx:id="topMenuSeparator" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="4.0" left="2.0" right="2.0" top="4.0" />
+                     </padding>
+                  </Separator>
+                  <Separator fx:id="bottomMenuSeparator" layoutX="10.0" layoutY="168.0" prefWidth="200.0">
+                     <padding>
+                        <Insets bottom="4.0" left="2.0" right="2.0" top="4.0" />
+                     </padding>
+                  </Separator>
+                  <JFXButton fx:id="profile" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" text="Profile" />
+                  <JFXButton fx:id="login" layoutX="10.0" layoutY="39.0" maxWidth="1.7976931348623157E308" text="Login" />
+                  <JFXButton fx:id="register" layoutX="10.0" layoutY="110.0" maxWidth="1.7976931348623157E308" text="Register" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+         </children>
+         <padding>
+            <Insets bottom="-3.0" left="3.0" top="3.0" />
+         </padding>
+      </HBox>
+   </left>
+   <center>
+      <ScrollPane minHeight="450.0" minWidth="680.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane fx:id="ap" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefWidth="680.0">
+               <children>
+                  <VBox fx:id="window" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="450.0" prefWidth="680.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
